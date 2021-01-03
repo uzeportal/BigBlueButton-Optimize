@@ -26,7 +26,7 @@ sed -i "s/defaultCopyright = .*/defaultCopyright = \'<p>https://uzeportal.com<\/
 #seetings.yml AYARLAR BAŞLIYOR
 #--------------------------------------------------
 echo "Chat Sesleri Aktif"
-sed -i 's/audioChatNotification:.*/audioChatNotification=true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/audioChatNotification:.*/audioChatNotification:true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Client Title"
 sed -i 's/clientTitle:.*/clientTitle: UzePortal/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
@@ -38,44 +38,44 @@ echo "Set Copyright"
 sed -i 's/copyright:.*/copyright: "©2019 UzePortal.Com"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Allow User Lookup"
-sed -i 's/allowUserLookup=.*/allowUserLookup=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/allowUserLookup:.*/allowUserLookup:true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set enableNetworkInformation"
-sed -i 's/enableNetworkInformation=.*/enableNetworkInformation=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/enableNetworkInformation:.*/enableNetworkInformation:true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set mirrorOwnWebcam"
-sed -i 's/mirrorOwnWebcam=.*/mirrorOwnWebcam=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/mirrorOwnWebcam:.*/mirrorOwnWebcam:true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set chatAudioAlerts"
-sed -i 's/chatAudioAlerts=.*/chatAudioAlerts=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/chatAudioAlerts:.*/chatAudioAlerts:true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set chatPushAlerts"
-sed -i 's/chatPushAlerts=.*/chatPushAlerts=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/chatPushAlerts:.*/chatPushAlerts:true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set showHelpButton"
-sed -i 's/showHelpButton=.*/showHelpButton=false"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/showHelpButton:.*/showHelpButton:false"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set enableNetworkMonitoring"
-sed -i 's/enableNetworkMonitoring=.*/enableNetworkMonitoring=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/enableNetworkMonitoring:.*/enableNetworkMonitoring:true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 
 echo "Set showLineNumbers"
-sed -i 's/showLineNumbers=.*/showLineNumbers=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/showLineNumbers:.*/showLineNumbers:true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set showChat"
-sed -i 's/showChat=.*/showChat=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/showChat:.*/showChat:true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set relayOnlyOnReconnect"
-sed -i 's/relayOnlyOnReconnect=.*/relayOnlyOnReconnect=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/relayOnlyOnReconnect:.*/relayOnlyOnReconnect:true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set restoreOnUpdate"
 sed -i 's/restoreOnUpdate=.*/restoreOnUpdate=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set multiUserPenOnly"
-sed -i 's/multiUserPenOnly=.*/multiUserPenOnly=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/multiUserPenOnly:.*/multiUserPenOnly:true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set streamerLog"
-sed -i 's/streamerLog=.*/streamerLog=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/streamerLog:.*/streamerLog:true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Helplink"
 sed -i 's/helpLink:.*/helpLink: http:\/\/https://uzeportal.com\/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
