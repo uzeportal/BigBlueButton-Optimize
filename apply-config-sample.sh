@@ -61,9 +61,6 @@ sed -i 's/showHelpButton:.*/showHelpButton: false/g' /usr/share/meteor/bundle/pr
 echo "Set enableNetworkMonitoring"
 sed -i 's/enableNetworkMonitoring:.*/enableNetworkMonitoring: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
-echo "Set cameraQualityThresholds"
-sed -i 's/cameraQualityThresholds:.*/enabled:*/enabled: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
-
 echo "Set showLineNumbers"
 sed -i 's/showLineNumbers:.*/showLineNumbers: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
@@ -82,14 +79,6 @@ sed -i 's/multiUserPenOnly:.*/multiUserPenOnly: true/g' /usr/share/meteor/bundle
 echo "Set streamerLog"
 sed -i 's/streamerLog:.*/streamerLog: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
-echo "Set memoryMonitoring"
-sed -i 's/memoryMonitoring:*/stat:*/enabled:*/enabled: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
-
-echo "Set memoryMonitoring"
-sed -i 's/memoryMonitoring:.*/leak:.*/enabled*/enabled: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
-
-echo "Set memoryMonitoring"
-sed -i 's/memoryMonitoring:.*/heapdump:.*/enabled*/enabled: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Helplink"
 sed -i 's/helpLink:.*/helpLink: https:\/\/uzeportal.com/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
