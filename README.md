@@ -25,10 +25,12 @@ chmod 755 replace-config.sh
 # Değişiklikleri uygulayın ve BBB'yi yeniden başlatın File Zilla Uygulamasını aç dosyayı 755 izinlere getir
 ./replace-config.sh
 ```
+...
+## NOT Problem Olursa Kullanın Gitup projenizden indirilen ve /root/BigBlueButton-Optimize diye oluşan klasörü sunucudan silmek içindir
+```sh
+rm -r /BigBlueButton-Optimize
+```
 
-NOT Problem Olursa Kullanın Gitup projenizden indirilen ve /root/BigBlueButton-Optimize diye oluşan klasörü sunucudan silmek içindir
- rm -r /BigBlueButton-Optimize
- 
  
 'apply-config.sh' dosyasını uygun şekilde düzenleyin. Her bir özelleştirmeyle ilgili yorumlar, her birinin anlamını anlamanıza yardımcı olacak ve varsayılan değerleri değiştirebileceksiniz.
 ## Markanızla eşleştirin
