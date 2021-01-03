@@ -16,12 +16,12 @@ Xml dosyalarını güncellemek için XMLStarlet ve metin dosyalarını güncelle
 sudo apt-get update -y
 sudo apt-get install -y xmlstarlet
 git clone https://github.com/uzeportal/BigBlueButton-Optimize.git
-cd bbb-optimize
+cd BigBlueButton-Optimize
 cp apply-config-sample.sh apply-config.sh
 
 # PUBLIC_IP'yi BBB sunucunuzun genel IP'sine ayarlamak için apply-config.sh dosyasını düzenleyin
 
-# Değişiklikleri uygulayın ve BBB'yi yeniden başlatın
+# Değişiklikleri uygulayın ve BBB'yi yeniden başlatın File Zilla Uygulamasını aç dosyayı 755 izinlere getir
 ./replace-config.sh
 ```
 'apply-config.sh' dosyasını uygun şekilde düzenleyin. Her bir özelleştirmeyle ilgili yorumlar, her birinin anlamını anlamanıza yardımcı olacak ve varsayılan değerleri değiştirebileceksiniz.
