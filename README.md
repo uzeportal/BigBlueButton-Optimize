@@ -15,7 +15,7 @@ Xml dosyalarını güncellemek için XMLStarlet ve metin dosyalarını güncelle
 ```sh
 sudo apt-get update -y
 sudo apt-get install -y xmlstarlet
-git clone https://github.com/dogangokce/BigBlueButton-Optimize.git
+git clone https://github.com/uzeportal/BigBlueButton-Optimize.git
 cd bbb-optimize
 cp apply-config-sample.sh apply-config.sh
 
