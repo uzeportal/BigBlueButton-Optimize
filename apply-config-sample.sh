@@ -1,9 +1,9 @@
 #!/bin/bash
+
 # Pull in the helper functions for configuring BigBlueButton
 source /etc/bigbluebutton/bbb-conf/apply-lib.sh
 
 enableUFWRules
-enableMultipleKurentos
 echo "  - Setting camera defaults"
 yq w -i $HTML5_CONFIG 'public.kurento.cameraProfiles.(id==low).bitrate' 50
 yq w -i $HTML5_CONFIG 'public.kurento.cameraProfiles.(id==medium).bitrate' 100
@@ -17,11 +17,6 @@ yq w -i $HTML5_CONFIG 'public.kurento.cameraProfiles.(id==hd).default' false
 
 echo "Running three parallel Kurento media server"
 enableMultipleKurentos
-
-echo "Fix till 2.2.30 - https://github.com/bigbluebutton/bigbluebutton/issues/9667"
-yq w -i /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml public.media.sipjsHackViaWs true
-sed -i 's/https/http/g'  /etc/bigbluebutton/nginx/sip.nginx 
-sed -i 's/7443/5066/g'  /etc/bigbluebutton/nginx/sip.nginx 
 
 echo "Set Copyright in Playback"
 sed -i "s/defaultCopyright = .*/defaultCopyright = \'<p>https://uzeportal.com<\/p>\';/g" /var/bigbluebutton/playback/presentation/2.0/playback.js
@@ -63,8 +58,6 @@ sed -i 's/showHelpButton=.*/showHelpButton=false"/g' /usr/share/meteor/bundle/pr
 echo "Set enableNetworkMonitoring"
 sed -i 's/enableNetworkMonitoring=.*/enableNetworkMonitoring=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
-echo "Set cameraQualityThresholds"
-sed -i 's/cameraQualityThresholds=.*/enabled=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set showLineNumbers"
 sed -i 's/showLineNumbers=.*/showLineNumbers=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
@@ -83,15 +76,6 @@ sed -i 's/multiUserPenOnly=.*/multiUserPenOnly=true"/g' /usr/share/meteor/bundle
 
 echo "Set streamerLog"
 sed -i 's/streamerLog=.*/streamerLog=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
-
-echo "Set memoryMonitoring"
-sed -i 's/memoryMonitoring=.*/stat=.*/enabled=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
-
-echo "Set memoryMonitoring"
-sed -i 's/memoryMonitoring=.*/leak=.*/enabled=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
-
-echo "Set memoryMonitoring"
-sed -i 's/memoryMonitoring=.*/heapdump=.*/enabled=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Helplink"
 sed -i 's/helpLink:.*/helpLink: http:\/\/https://uzeportal.com\/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
