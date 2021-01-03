@@ -89,7 +89,7 @@ echo "Set Copyright"
 sed -i 's/copyright:.*/copyright: "©2019 UzePortal.Com"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Helplink"
-sed -i 's/helpLink:.*/helpLink: http:\/\/uzeportal.com\/bigbluebutton-guide#using-bigbluebutton/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/helpLink:.*/helpLink: http:\/\/uzeportal.com\/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Copyright in Playback"
 sed -i "s/defaultCopyright = .*/defaultCopyright = \'<p>uzeportal.com<\/p>\';/g" /var/bigbluebutton/playback/presentation/2.0/playback.js
