@@ -83,7 +83,7 @@ echo "Set streamerLog"
 sed -i 's/streamerLog:.*/streamerLog: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set memoryMonitoring"
-sed -i 's/memoryMonitoring:.n/stat:.n/enabled: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/memoryMonitoring:.n/ stat:.n/ enabled: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set memoryMonitoring"
 sed -i 's/memoryMonitoring:.*/leak:.*/enabled: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
