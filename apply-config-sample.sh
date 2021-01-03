@@ -23,9 +23,8 @@ sed -i 's/attendeesJoinViaHTML5Client=.*/attendeesJoinViaHTML5Client=true/g' /us
 sed -i 's/moderatorsJoinViaHTML5Client=.*/moderatorsJoinViaHTML5Client=true/g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
 
 echo "Set Welcome message"
-sed -i 's/defaultWelcomeMessage=.*/defaultWelcomeMessage=Merhaba,<b>%%CONFNAME%%</b> Uzaktan Egitim Canli Derse Hosgeldiniz.!/g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
-sed -i 's/defaultWelcomeMessageFooter=.*/defaultWelcomeMessageFooter=Daha fazla bilgi <a href="http://uzeportal.com" target="_blank"><u>UzePortal.Com</u></a>./g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
-#sed -i 's/defaultWelcomeMessageFooter=.*/defaultWelcomeMessageFooter=To join this meeting by phone, dial:<br>  %%DIALNUM%%<br>Then enter %%CONFNUM%% as the conference PIN number./g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
+sed -i 's/defaultWelcomeMessage=.*/defaultWelcomeMessage=Merhaba,Uzaktan Egitim Canli Derse Hosgeldiniz. <b>\%\%CONFNAME\%\%<\/b>\!/g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
+sed -i 's/defaultWelcomeMessageFooter=.*/defaultWelcomeMessageFooter=Daha fazla bilgi UzePortal.Com/g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
 
 #echo "Set dial in number"
 #sed -i 's/defaultDialAccessNumber=.*/defaultDialAccessNumber=+12564725575/g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
@@ -89,7 +88,7 @@ echo "Set Copyright"
 sed -i 's/copyright:.*/copyright: "©2019 UzePortal.Com"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Helplink"
-sed -i 's/helpLink:.*/helpLink: http:\/\/uzeportal.com\/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/helpLink:.*/helpLink: http:\/\/uzeportal.com/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Copyright in Playback"
 sed -i "s/defaultCopyright = .*/defaultCopyright = \'<p>uzeportal.com<\/p>\';/g" /var/bigbluebutton/playback/presentation/2.0/playback.js
