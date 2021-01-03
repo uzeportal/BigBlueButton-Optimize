@@ -18,6 +18,7 @@ sudo apt-get install -y xmlstarlet
 git clone https://github.com/uzeportal/BigBlueButton-Optimize.git
 cd BigBlueButton-Optimize
 cp apply-config-sample.sh apply-config.sh
+chmod 755 replace-config.sh
 
 # PUBLIC_IP'yi BBB sunucunuzun genel IP'sine ayarlamak için apply-config.sh dosyasını düzenleyin
 
