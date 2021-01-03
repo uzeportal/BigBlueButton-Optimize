@@ -32,6 +32,7 @@ cp default.pdf /var/www/bigbluebutton-default/
 cp favicon.ico /var/www/bigbluebutton-default/
 cp default.pptx /var/www/bigbluebutton-default/
 cp index.html /var/www/bigbluebutton-default/
+cp tr.json /usr/share/meteor/bundle/programs/server/assets/app/locales/
 bbb-conf --restart
 ```
 Varsayılan BigBlueButton kurulumunu markanızla eşleşecek şekilde aşağıdaki şekillerde güncelleyebilirsiniz:
