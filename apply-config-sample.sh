@@ -23,8 +23,8 @@ yq w -i /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml 
 sed -i 's/https/http/g'  /etc/bigbluebutton/nginx/sip.nginx 
 sed -i 's/7443/5066/g'  /etc/bigbluebutton/nginx/sip.nginx 
 
-echo "Set Copyright in Playback"
-sed -i "s/defaultCopyright = .*/defaultCopyright = \'<p>https://uzeportal.com<\/p>\';/g" /var/bigbluebutton/playback/presentation/2.0/playback.js
+echo "Oynatmada Telif Hakkını Ayarlama"
+sed -i "s/defaultCopyright = .*/defaultCopyright = \'<p>uzeportal.com<\/p>\';/g" /var/bigbluebutton/playback/presentation/2.0/playback.js
 
 #seetings.yml AYARLAR BAŞLIYOR
 #--------------------------------------------------
