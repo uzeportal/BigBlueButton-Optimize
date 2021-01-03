@@ -26,12 +26,10 @@ sed -i 's/7443/5066/g'  /etc/bigbluebutton/nginx/sip.nginx
 echo "Set Copyright in Playback"
 sed -i "s/defaultCopyright = .*/defaultCopyright = \'<p>https://uzeportal.com<\/p>\';/g" /var/bigbluebutton/playback/presentation/2.0/playback.js
 
-
-
 #seetings.yml AYARLAR BAŞLIYOR
 #--------------------------------------------------
 echo "Chat Sesleri Aktif"
-sed -i 's/audioChatNotification:.*/audioChatNotification=true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/audioChatNotification:.*/audioChatNotification: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Client Title"
 sed -i 's/clientTitle:.*/clientTitle: UzePortal/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
@@ -43,58 +41,58 @@ echo "Set Copyright"
 sed -i 's/copyright:.*/copyright: "©2019 UzePortal.Com"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Allow User Lookup"
-sed -i 's/allowUserLookup=.*/allowUserLookup=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/allowUserLookup:.*/allowUserLookup: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set enableNetworkInformation"
-sed -i 's/enableNetworkInformation=.*/enableNetworkInformation=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/enableNetworkInformation:.*/enableNetworkInformation: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set mirrorOwnWebcam"
-sed -i 's/mirrorOwnWebcam=.*/mirrorOwnWebcam=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/mirrorOwnWebcam:.*/mirrorOwnWebcam: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set chatAudioAlerts"
-sed -i 's/chatAudioAlerts=.*/chatAudioAlerts=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/chatAudioAlerts:.*/chatAudioAlerts: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set chatPushAlerts"
-sed -i 's/chatPushAlerts=.*/chatPushAlerts=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/chatPushAlerts:.*/chatPushAlerts: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set showHelpButton"
-sed -i 's/showHelpButton=.*/showHelpButton=false"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/showHelpButton:.*/showHelpButton: false/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set enableNetworkMonitoring"
-sed -i 's/enableNetworkMonitoring=.*/enableNetworkMonitoring=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/enableNetworkMonitoring:.*/enableNetworkMonitoring: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set cameraQualityThresholds"
-sed -i 's/cameraQualityThresholds=.*/enabled=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/cameraQualityThresholds:.*/enabled: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set showLineNumbers"
-sed -i 's/showLineNumbers=.*/showLineNumbers=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/showLineNumbers:.*/showLineNumbers: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set showChat"
-sed -i 's/showChat=.*/showChat=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/showChat:.*/showChat: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set relayOnlyOnReconnect"
-sed -i 's/relayOnlyOnReconnect=.*/relayOnlyOnReconnect=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/relayOnlyOnReconnect:.*/relayOnlyOnReconnect: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set restoreOnUpdate"
-sed -i 's/restoreOnUpdate=.*/restoreOnUpdate=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/restoreOnUpdate:.*/restoreOnUpdate: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set multiUserPenOnly"
-sed -i 's/multiUserPenOnly=.*/multiUserPenOnly=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/multiUserPenOnly:.*/multiUserPenOnly: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set streamerLog"
-sed -i 's/streamerLog=.*/streamerLog=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/streamerLog:.*/streamerLog: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set memoryMonitoring"
-sed -i 's/memoryMonitoring=.*/stat=.*/enabled=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/memoryMonitoring:.*/stat:.*/enabled: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set memoryMonitoring"
-sed -i 's/memoryMonitoring=.*/leak=.*/enabled=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/memoryMonitoring:.*/leak:.*/enabled: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set memoryMonitoring"
-sed -i 's/memoryMonitoring=.*/heapdump=.*/enabled=true"/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/memoryMonitoring:.*/heapdump:.*/enabled: true/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 echo "Set Helplink"
-sed -i 's/helpLink:.*/helpLink: http:\/\/https://uzeportal.com\/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+sed -i 's/helpLink:.*/helpLink: https:\/\/uzeportal.com/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 
 
 
@@ -106,8 +104,8 @@ sed -i 's/attendeesJoinViaHTML5Client=.*/attendeesJoinViaHTML5Client=true/g' /us
 sed -i 's/moderatorsJoinViaHTML5Client=.*/moderatorsJoinViaHTML5Client=true/g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
 
 echo "Set Welcome message"
-sed -i 's/defaultWelcomeMessage=.*/defaultWelcomeMessage=Merhaba, Uzaktan Egitim Canli Derse Hosgeldiniz./g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
-sed -i 's/defaultWelcomeMessageFooter=.*/defaultWelcomeMessageFooter=Daha fazla bilgi için <a href="https://uzeportal.com" target="_blank"><u>UzePortal.Com</u></a> adresini ziyaret ediniz./g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
+sed -i 's/defaultWelcomeMessage=.*/defaultWelcomeMessage=Merhaba,Uzaktan Egitim Canli Derse Hosgeldiniz./g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
+sed -i 's/defaultWelcomeMessageFooter=.*/defaultWelcomeMessageFooter=Daha fazla bilgi icin UzePortal.Com/g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
 
 echo "Set disableRecordingDefault"
 sed -i 's/disableRecordingDefault=.*/disableRecordingDefault=true/g' /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
@@ -159,5 +157,3 @@ sed -i 's/listenOnlyMode:.*/listenOnlyMode: false/g' /usr/share/meteor/bundle/pr
 
 echo "Enable audio check otherwise may face audio issue"
 sed -i 's/skipCheck:.*/skipCheck: false/g' /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
-
-
