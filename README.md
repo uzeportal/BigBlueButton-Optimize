@@ -100,7 +100,8 @@ cp conf-bad-pin.wav /opt/freeswitch/share/freeswitch/sounds/en/us/callie/confere
 cp conf-conference_is_full.wav /opt/freeswitch/share/freeswitch/sounds/en/us/callie/conference/32000/
 cp conf-conference_is_in_qna_mode.wav /opt/freeswitch/share/freeswitch/sounds/en/us/callie/conference/32000/
 cp conf-conference_will_start_shortly.wav /opt/freeswitch/share/freeswitch/sounds/en/us/callie/conference/32000/
-cp conf-enter_conf_number.wav /opt/freeswitch/share/freeswitch/sounds/en/us/callie/conference/32000/cp conf-enter_conf_pin.wav /opt/freeswitch/share/freeswitch/sounds/en/us/callie/conference/16000/
+cp conf-enter_conf_number.wav /opt/freeswitch/share/freeswitch/sounds/en/us/callie/conference/32000/
+cp conf-enter_conf_pin.wav /opt/freeswitch/share/freeswitch/sounds/en/us/callie/conference/16000/
 cp conf-entry_sound.wav /opt/freeswitch/share/freeswitch/sounds/en/us/callie/conference/16000/
 cp conf-exit_sound.wav /opt/freeswitch/share/freeswitch/sounds/en/us/callie/conference/16000/
 cp conf-goodbye.wav /opt/freeswitch/share/freeswitch/sounds/en/us/callie/conference/16000/
