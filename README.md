@@ -13,6 +13,7 @@ BigBlueButton sunucusunun tüm özelleştirmelerini apply-config.sh içinde tutu
 Xml dosyalarını güncellemek için XMLStarlet ve metin dosyalarını güncellemek için sed kullanıyoruz.
 
 ```sh
+sudo apt-get upgrade
 sudo apt-get update -y
 sudo apt-get install -y xmlstarlet
 git clone https://github.com/uzeportal/BigBlueButton-Optimize.git
